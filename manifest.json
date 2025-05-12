@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Ursina 한글 번역 툴팁",
+    "description": "Ursina 공식 문서에서 용어를 한글로 바꾸고 툴팁을 표시합니다.",
+    "version": "1.0",
+    "icons": {
+      "48": "icon.png"
+    },
+    "permissions": ["scripting", "activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.ursinaengine.org/api_reference.html"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
